@@ -1,0 +1,154 @@
+nav.navbar {
+    font-weight: 700;
+}
+#home{
+    background-image: url("../imgs/bg-masthead.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+div#home::after {
+    content: "";
+    background-color: #5c4d4291;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+#home .container{
+    z-index: 10;
+}
+.border-it{
+    width: 50px;
+    height: 3px;
+    background-color:#f4623a ;
+    display: inline-block;
+
+}
+.btn{
+    border-radius:50px ;
+    padding: 15px 25px;
+    text-transform:uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-primary{
+    background-color:#f4623a  ;
+    color: #fff;
+    border-color: #ee3e0d;
+
+}
+.btn-primary:hover{
+    background-color:#f4623a !important;  ;
+    color: #fff;
+    border-color: #ee3e0d !important;
+}
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(246,122,88,.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(246,122,88,.5) !important;
+}
+section#about {
+    background: #f4623a!important;
+    padding: 140px;
+}
+ p {
+    color: rgba(227, 227, 227, 0.9);
+}
+#about .border-it {
+    background: #fff;
+}
+#services{
+    padding: 140px;
+}
+.icon{
+    font-size: 75px;
+    color:#f4623a ;
+}
+section#portfolio .container-fluid {
+    padding: 0;
+}
+section#portfolio img{
+    width: 100%;
+}
+section#portfolio a {
+    position: relative;
+}
+.portfolio-box-caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244,98,58,.9);
+}
+
+section#portfolio a:hover .portfolio-box-caption{
+    display: flex;
+}
+@media (min-width: 1200px){
+    #home h1{
+        font-size: 55px;
+    }
+}
+@media (min-width: 992px){
+    a.navbar-brand {
+        color: #fff !important;
+    }
+    a.nav-link {
+        color: #c8c8c8 !important;
+    }
+    li.nav-item.active a {
+        color: #fff !important;
+    }
+    .navbar.shrink li.nav-item.active a{
+        color: red !important;
+    }
+    #home h1{
+        font-size: 55px;
+    }
+     p{
+        font-size: 18px;
+    }
+}
+.portfolio-box-caption {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244,98,58,.9);
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .25s ease
+}
+.portfolio-box-caption:hover{
+    opacity: 1;
+}
+.project-name {
+    font-size: 20px;
+    color: #fff;
+}
+.navbar.shrink {
+    background-color: #fff !important;
+    box-shadow: 0px 1px 2px 0px #ccc ;
+
+}
+.navbar.shrink a{
+    color: #000 !important;
+}
+.download{
+    padding: 100px 0;
+}
+#contact{
+    padding: 100px;
+}
+#contact .fa{
+    font-size: 25px;
+}
